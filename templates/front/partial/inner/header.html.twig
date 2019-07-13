@@ -1,0 +1,90 @@
+{#{{ Request::path() == '/' ? '' : 'type2' }}#}
+{#app.user.username|default('')#}
+<header class="header_style1 ">
+        <section id="header_part1">
+                <div class="uk-container">
+                        <div class="inner">
+                                <div data-uk-navbar>
+                                        <div class="uk-navbar-right nav_style1">
+                                                <ul class="uk-navbar-nav uk-flex-middle">
+                                                        <li class="ns1_item" id="logo">
+                                                                <a href="#">
+                                                                        <img src="{{asset('_images/logo/logo.png')}}" alt="" title="">
+                                                                </a>
+                                                        </li>
+
+                                                        <li class="ns1_item">
+                                                                <a href="#" class="ns1_link">قوانین و سیاست ها</a>
+                                                        </li>
+                                                        <li class="ns1_item">
+                                                                <a href="#" class="ns1_link">
+                                                                        تماس با ما
+                                                                </a>
+                                                        </li>
+
+                                                        <li class="ns1_item hassub">
+                                                                <a href="#" class="ns1_link">
+                                                                        حساب کاربری
+                                                                        <i class="i-down-chevron icon"></i>
+                                                                </a>
+                                                                <div class="uk-navbar-dropdown submenu">
+                                                                        <div class="acc_style1">
+                                                                                <div uk-grid>
+
+{#                                                                                        @if(auth()->check())#}
+                                                                                        <div class="uk-width-1-1">
+                                                                                                <div uk-grid>
+                                                                                                        <div class="uk-width-1-2">
+                                                                                                                <div class="acc_pic"
+                                                                                                                     style='background-image: url(".")'></div>
+
+                                                                                                        </div>
+                                                                                                        <div class="uk-width-auto uk-padding-remove-right">
+                                                                                                                <div class="wrapper_link">
+                                                                                                                        <ul>
+
+                                                                                                                                <li class="acc_item">
+                                                                                                                                        <a href="#" class="acc_link arrow_hover">
+                                                                                                                                                <i class="arrow_style1"></i>رزرو های من
+                                                                                                                                        </a>
+                                                                                                                                </li>
+                                                                                                                                <li class="acc_item">
+                                                                                                                                        <a href="#" class="acc_link arrow_hover">
+                                                                                                                                                <i class="arrow_style1"></i>خروج از پنل
+                                                                                                                                        </a>
+                                                                                                                                </li>
+                                                                                                                        </ul>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+                                                                                        <div class="uk-width-1-1 uk-margin-remove-top">
+                                                                                                <div class="wrapper_btn uk-text-center">
+                                                                                                        <div class="acc_credit">                                                            موجودی شما :
+                                                                                                                <span className='price'>10</span>                                                            تومان
+                                                                                                        </div>
+                                                                                                </div>
+                                                                                        </div>
+{#                                                                                        @else#}
+                                                                                        <div class="uk-width-1-1 uk-margin-remove-top">
+                                                                                                <div class="wrapper_btn uk-text-center">
+                                                                                                        <a href="#modal-login" class="btn_style1 fill" uk-toggle>ورود</a>
+                                                                                                        <a href="#modal-register" class="btn_style1" uk-toggle>ثبت نام</a>
+                                                                                                </div>
+                                                                                        </div>
+{#                                                                                        @endif#}
+
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </li>
+
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+</header>
+
+
