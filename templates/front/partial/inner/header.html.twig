@@ -1,90 +1,115 @@
-{#{{ Request::path() == '/' ? '' : 'type2' }}#}
-{#app.user.username|default('')#}
-<header class="header_style1 ">
-        <section id="header_part1">
-                <div class="uk-container">
-                        <div class="inner">
-                                <div data-uk-navbar>
-                                        <div class="uk-navbar-right nav_style1">
-                                                <ul class="uk-navbar-nav uk-flex-middle">
-                                                        <li class="ns1_item" id="logo">
-                                                                <a href="#">
-                                                                        <img src="{{asset('_images/logo/logo.png')}}" alt="" title="">
-                                                                </a>
-                                                        </li>
+<div class="page-header md-shadow-z-1-i navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
 
-                                                        <li class="ns1_item">
-                                                                <a href="#" class="ns1_link">قوانین و سیاست ها</a>
-                                                        </li>
-                                                        <li class="ns1_item">
-                                                                <a href="#" class="ns1_link">
-                                                                        تماس با ما
-                                                                </a>
-                                                        </li>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+           data-target=".navbar-collapse">
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE ACTIONS -->
+        <!-- DOC: Remove "hide" class to enable the page header actions -->
 
-                                                        <li class="ns1_item hassub">
-                                                                <a href="#" class="ns1_link">
-                                                                        حساب کاربری
-                                                                        <i class="i-down-chevron icon"></i>
-                                                                </a>
-                                                                <div class="uk-navbar-dropdown submenu">
-                                                                        <div class="acc_style1">
-                                                                                <div uk-grid>
+        <div class="page-actions">
+            <div class="btn-group">
+                <button type="button" class="btn purple btn-sm dropdown-toggle" data-toggle="dropdown"
+                        data-hover="dropdown" data-close-others="true">
+                    <span class="hidden-sm hidden-xs">لینک های مفید&nbsp;</span><i style="vertical-align: -3px"
+                                                                                   class="fa fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu" role="menu">
 
-{#                                                                                        @if(auth()->check())#}
-                                                                                        <div class="uk-width-1-1">
-                                                                                                <div uk-grid>
-                                                                                                        <div class="uk-width-1-2">
-                                                                                                                <div class="acc_pic"
-                                                                                                                     style='background-image: url(".")'></div>
+                    <li>
+                        <a target="_blank" title="نتیجه جستجو بهزاد بابایی در گوگل"
+                           href="https://www.google.com/#q=بهزادبابایی">
+                            <i class="icon-question"></i> بهزاد بابایی در گوگول</a>
+                    </li>
 
-                                                                                                        </div>
-                                                                                                        <div class="uk-width-auto uk-padding-remove-right">
-                                                                                                                <div class="wrapper_link">
-                                                                                                                        <ul>
-
-                                                                                                                                <li class="acc_item">
-                                                                                                                                        <a href="#" class="acc_link arrow_hover">
-                                                                                                                                                <i class="arrow_style1"></i>رزرو های من
-                                                                                                                                        </a>
-                                                                                                                                </li>
-                                                                                                                                <li class="acc_item">
-                                                                                                                                        <a href="#" class="acc_link arrow_hover">
-                                                                                                                                                <i class="arrow_style1"></i>خروج از پنل
-                                                                                                                                        </a>
-                                                                                                                                </li>
-                                                                                                                        </ul>
-                                                                                                                </div>
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-                                                                                        <div class="uk-width-1-1 uk-margin-remove-top">
-                                                                                                <div class="wrapper_btn uk-text-center">
-                                                                                                        <div class="acc_credit">                                                            موجودی شما :
-                                                                                                                <span className='price'>10</span>                                                            تومان
-                                                                                                        </div>
-                                                                                                </div>
-                                                                                        </div>
-{#                                                                                        @else#}
-                                                                                        <div class="uk-width-1-1 uk-margin-remove-top">
-                                                                                                <div class="wrapper_btn uk-text-center">
-                                                                                                        <a href="#modal-login" class="btn_style1 fill" uk-toggle>ورود</a>
-                                                                                                        <a href="#modal-register" class="btn_style1" uk-toggle>ثبت نام</a>
-                                                                                                </div>
-                                                                                        </div>
-{#                                                                                        @endif#}
-
-                                                                                </div>
-                                                                        </div>
-                                                                </div>
-                                                        </li>
-
-                                                </ul>
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </section>
-</header>
+                </ul>
+            </div>
+        </div>
 
 
+        <div class="page-top">
+
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="separator hide">
+                    </li>
+                    <!-- BEGIN NOTIFICATION DROPDOWN -->
+
+                    <li class="separator hide">
+                    </li>
+
+
+                    <li class="dropdown dropdown-extended dropdown-notification dropdown-dark"
+                        id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true" title="درخواست ها">
+                            <i class="fa fa-truck"></i>
+                            <span class="badge badge-warning">12</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="external">
+                                <h3>درخواست های دیده شده </h3>
+                                <a href="#">مشاهده درخواست ها</a>
+                            </li>
+                            <li>
+                                <ul class="dropdown-menu-list scroller" style="height: 250px;"
+                                    data-handle-color="#637283">
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="time">dddd</span>
+                                            <span class="details">
+                                                    <span class="label label-sm label-icon label-success">
+                                                        <i class="fa fa-check"></i>
+                                                    </span>
+                                                </span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown dropdown-user dropdown-dark">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                           data-close-others="true">
+                            <span class="username username-hide-on-mobile">User Name</span>
+                            <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
+                            <img alt="" class="img-circle" src="#"/>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+
+                            <li>
+                                <a data-toggle="modal" href="#passChangeModal">
+                                    <i class="icon-lock"></i> تغییر رمز عبور
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li title="خروج از حساب کاربری">
+                                <a href="#">
+                                    <i class="icon-key"></i>خروج</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- END USER LOGIN DROPDOWN -->
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+    </div>
+    <!-- END HEADER INNER -->
+</div>

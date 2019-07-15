@@ -1,0 +1,360 @@
+
+@font-face {
+    font-family: Iransans;
+    src: url(../iran-fonts/iransans/iransans.eot);
+    src: url(../iran-fonts/iransans/iransans.woff2) format('embedded-opentype'), url(../iran-fonts/iransans/iransans.woff) format('woff'), url(../iran-fonts/iransans/iransans.ttf) format('truetype')
+}
+
+/*
+
+body style
+
+*/
+
+body{
+    font-family: Iransans,tahoma,sans-serif;
+}
+
+/*
+content style
+*/
+
+.content-page {
+    margin-right: 270px;
+    margin-left: 0px;
+    /*overflow: hidden;*/
+}
+
+/*
+side menu style
+*/
+
+body.fixed-left .side-menu.left{
+    right:0 !important;
+}
+
+.has_sub.nav-active i.mdi-chevron-left:before {
+    content: "\F140";
+}
+
+#sidebar-menu ul ul a {
+
+    /*padding: 12px 70px 12px 55px;*/
+    padding: 14px 70px 12px 5px;
+
+}
+
+.page-title {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+
+.side-menu {
+    width: 270px !important;
+}
+
+/*
+toolbar style
+*/
+
+.topbar {
+
+    left: 0;
+    right: 270px;
+}
+
+.topbar-left div{
+    text-align: center;
+}
+.topbar-left {
+    padding-left: 0px !important;
+}
+
+
+
+/*
+
+module recent activity
+
+*/
+.activity-feed .feed-item {
+
+    padding-right: 30px;
+    padding-left: 0 !important;
+
+    border-left: 0 !important;
+    border-right: 2px solid #e4e8eb;
+}
+
+.activity-feed .feed-item::after {
+
+    left: auto;
+    right: -6px !important;
+}
+
+.table {
+    direction: rtl;
+}
+
+
+.nav.nav-tabs{
+   direction: rtl;
+}
+
+.nav.nav-pills.nav-justified{
+    direction: rtl;
+}
+
+ul.pagination{
+    direction: rtl;
+}
+
+ul.list-unstyled{
+    direction: rtl;
+}
+
+.card-body{
+    direction: rtl;
+}
+
+div.card-body div.media{
+    direction: rtl;
+}
+
+a.media{
+    direction: rtl;
+}
+
+ul.dropdown-menu.show{
+    transform: translate3d(0px, 38px, 0px) !important;
+}
+
+.dropdown-item{
+    direction: rtl;
+}
+.profile-dropdown i {
+
+    vertical-align: inherit;
+
+}
+
+.email-rightbar-2 {
+    width: 200px;
+    float: right;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.email-rightbar-content-2 {
+    margin-right: 230px;
+    direction: rtl;
+}
+
+
+/*
+
+email inbox style
+
+*/
+
+.message-list li .col-mail {
+    float: right;
+}
+
+.message-list li .col-mail-1 .star-toggle, .message-list li .col-mail-1 .checkbox-wrapper-mail, .message-list li .col-mail-1 .dot {
+    float: right;
+}
+
+.message-list li .col-mail-1 .title {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    /*left: 0; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+
+.message-list li .col-mail-1 .star-toggle {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+.message-list li .col-mail-2 {
+    right: 320px;
+    left: 0;
+}
+
+.message-list li .col-mail-2 .subject {
+    width: 90%;
+    right: 0;
+
+}
+
+.message-list li .col-mail-2 .date {
+    left: 0px !important;
+    right: initial;
+    padding-left: 0;
+    text-align: center;
+    width: 9%;
+    /* float: left; */
+}
+
+
+/*
+
+footer style
+
+*/
+
+.footer{
+    left: 0;
+    right: 270px;
+    direction: rtl;
+}
+
+
+
+/*
+table styles
+
+*/
+
+.portlet-title {
+    border: 0 !important;
+    /*margin-bottom: 0;*/
+    /*padding: 0;*/
+    /*min-height: 48px;*/
+}
+
+
+.table-header{
+    display: initial !important;
+}
+
+.portlet-title {
+    border-bottom: 1px solid #eee;
+    padding: 0;
+    margin-bottom: 10px;
+    min-height: 41px;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    -ms-border-radius: 2px 2px 0 0;
+    -o-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+}
+
+.portlet-title > .actions {
+    float: left;
+
+}
+
+
+
+.portlet-title > .caption {
+    color: #666;
+    float: right;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.portlet-title > .caption > i {
+    float: right;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #666;
+}
+
+.pagination{
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+.myRequired:after {
+    content: '*';
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 3px;
+    display: inline-block;
+}
+
+
+/* The customcheck */
+.customcheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.customcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.customcheck:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.customcheck input:checked ~ .checkmark {
+    background-color: #02cf32;
+    border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.customcheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.customcheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.select2.select2-container{
+    width:100% !important;
+}
